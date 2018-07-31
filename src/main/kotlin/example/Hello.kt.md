@@ -1,9 +1,12 @@
 ```
-("Body : key1=value1"
+------------- request ---------------
+"Body : key1=value1"
 "Headers : (2)"
 Accept-Encoding : compress;q=0.5, gzip;q=1.0
 Content-Type : application/x-www-form-urlencoded
-, <-- 200 (http://httpbin.org/post)
+
+--------------- response -----------------
+<-- 200 (http://httpbin.org/post)
 Response : OK
 Length : 558
 Body : ({
@@ -35,10 +38,12 @@ Access-Control-Allow-Origin : [*]
 Access-Control-Allow-Credentials : [true]
 Connection : [keep-alive]
 Content-Length : [558]
-Date : [Tue, 31 Jul 2018 11:58:30 GMT]
+Date : [Tue, 31 Jul 2018 12:17:36 GMT]
 Via : [1.1 vegur]
 Content-Type : [application/json]
-, [Success: {
+
+--------------- third ------------------
+[Success: {
   "args": {},
   "data": "",
   "files": {},
@@ -60,5 +65,5 @@ Content-Type : [application/json]
   "origin": "219.144.248.241",
   "url": "http://httpbin.org/post"
 }
-])
+]
 ```
